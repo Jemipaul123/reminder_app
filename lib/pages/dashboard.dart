@@ -4,6 +4,7 @@ import 'package:shopping_app/pages/thirdpage.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:shopping_app/pages/workpg2.dart';
 import 'mainpg.dart';
+import 'finalpage.dart';
 class Dashboard extends StatefulWidget {
   const Dashboard({Key? key}) : super(key: key);
 
@@ -42,11 +43,19 @@ class _DashboardState extends State<Dashboard> {
             Positioned(
               top: MediaQuery.of(context).size.height / 2 - 200,
               left: MediaQuery.of(context).size.width / 2 - 200,
-              child: Container(
-                child: Image.asset(
-                  'lib/images/dash.png',
-                  height: 400,
-                  width: 400,
+              child: GestureDetector(
+                onTap: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => FinalPage()),
+                  );
+                },
+                child: Container(
+                  child: Image.asset(
+                    'lib/images/dash.png',
+                    height: 400,
+                    width: 400,
+                  ),
                 ),
               ),
             ),
@@ -118,3 +127,4 @@ class _DashboardState extends State<Dashboard> {
     );
   }
 }
+
