@@ -17,21 +17,92 @@ class _MainPageState extends State<MainPage> {
       backgroundColor: Colors.brown.shade300,
       body: Column(
         children: [
-          Container(
-            color: Colors.black,
-            height: kToolbarHeight,
-            child: Center(
-              child: Text(
-                'Shopping',
-                style: TextStyle(
-                  color: Colors.white,
-                  fontSize: 24.0,
-                  fontWeight: FontWeight.bold,
+        Container(
+        color: Colors.brown.shade900,
+        height: kToolbarHeight,
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Icon(
+              Icons.local_grocery_store,
+              size: 30,
+              color: Colors.white,
+            ),
+            SizedBox(width: 10),
+            Text(
+              'Shopping',
+              style: TextStyle(
+                color: Colors.white,
+                fontSize: 30.0,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+          ],
+        ),
+      ),
+
+
+        SizedBox(height: 16.0),
+
+    InkWell(
+    onTap: () {
+    Navigator.push(
+    context,
+    MaterialPageRoute(builder: (context) => WorkPage()),
+    );
+    },
+    child: SizedBox(
+    child: Container(
+    decoration: BoxDecoration(
+    color: Colors.brown.shade500,
+    borderRadius: BorderRadius.circular(20.0),
+    ),
+    height: kToolbarHeight,
+    width:250,
+    child: Center(
+    child: Text(
+    'Groceries',
+    style: TextStyle(
+    color: Colors.white,
+    fontSize: 20.0,
+
+    ),
+    ),
+    ),
+    ),
+    ),
+    ),
+
+    SizedBox(height: 16.0),
+
+          InkWell(
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => WorkPage()),
+              );
+            },
+            child: SizedBox(
+              child: Container(
+                decoration: BoxDecoration(
+                  color: Colors.brown.shade500,
+                  borderRadius: BorderRadius.circular(20.0),
+                ),
+                height: kToolbarHeight,
+                width:250,
+                child: Center(
+                  child: Text(
+                    'Vegetables',
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 20.0,
+
+                    ),
+                  ),
                 ),
               ),
             ),
           ),
-
           SizedBox(height: 16.0),
 
           InkWell(
@@ -42,19 +113,20 @@ class _MainPageState extends State<MainPage> {
               );
             },
             child: SizedBox(
-
               child: Container(
-
-                color: Colors.black,
+                decoration: BoxDecoration(
+                  color: Colors.brown.shade500,
+                  borderRadius: BorderRadius.circular(20.0),
+                ),
                 height: kToolbarHeight,
-                width:300,
+                width:250,
                 child: Center(
                   child: Text(
-                    'Groceries',
+                    'Fruits',
                     style: TextStyle(
                       color: Colors.white,
-                      fontSize: 24.0,
-                      fontWeight: FontWeight.bold,
+                      fontSize: 20.0,
+
                     ),
                   ),
                 ),
@@ -71,81 +143,35 @@ class _MainPageState extends State<MainPage> {
                 MaterialPageRoute(builder: (context) => WorkPage()),
               );
             },
-            child: Container(
-              color: Colors.black,
-              height: kToolbarHeight,
-              width: 300,
-              child: Center(
-                child: Text(
-                  'Vegetables',
-                  style: TextStyle(
-                    color: Colors.white,
-                    fontSize: 24.0,
-                    fontWeight: FontWeight.bold,
+            child: SizedBox(
+              child: Container(
+
+                decoration: BoxDecoration(
+                  color: Colors.brown.shade500,
+                  borderRadius: BorderRadius.circular(20.0),
+                ),
+                height: kToolbarHeight,
+                width:250,
+                child: Center(
+                  child: Text(
+                    'Stationery',
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 20.0,
+
+                    ),
                   ),
                 ),
               ),
             ),
           ),
 
-          SizedBox(height: 16.0),
-
-          InkWell(
-            onTap: () {
-              Navigator.push(
-                context,
-                MaterialPageRoute(builder: (context) => WorkPage()),
-              );
-            },
-            child: Container(
-              color: Colors.black,
-              height: kToolbarHeight,
-              width: 300,
-              child: Center(
-                child: Text(
-                  'Fruits',
-                  style: TextStyle(
-                    color: Colors.white,
-                    fontSize: 24.0,
-                    fontWeight: FontWeight.bold,
-                  ),
-                ),
-              ),
-            ),
-          ),
-
-          SizedBox(height: 16.0),
-
-          InkWell(
-            onTap: () {
-              Navigator.push(
-                context,
-                MaterialPageRoute(builder: (context) => WorkPage()),
-              );
-            },
-            child: Container(
-              color: Colors.black,
-
-              height: kToolbarHeight,
-              width: 300,
-              child: Center(
-                child: Text(
-                  'Stationery',
-                  style: TextStyle(
-                    color: Colors.white,
-                    fontSize: 24.0,
-                    fontWeight: FontWeight.bold,
-                  ),
-                ),
-              ),
-            ),
-          ),
           Spacer(),
           Container(
             height:60,
             width:60,
             decoration: BoxDecoration(
-                color: Colors.black,
+                color: Colors.brown.shade900,
                 borderRadius: BorderRadius.circular(1.0)
             ),
             child: Padding(
@@ -168,3 +194,4 @@ class _MainPageState extends State<MainPage> {
     );
   }
 }
+
