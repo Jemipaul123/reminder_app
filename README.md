@@ -16,6 +16,14 @@ To get started with the Reminder App, follow these steps:
 - Open the project in your preferred code editor.
 - Run the app on a mobile emulator or physical device.
 
+# Dependencies
+The Shopping Reminder App 'ShopEase' has the following dependencies:
+
+- Flutter 2.2.3 or higher
+- Dart 2.13.4 or higher
+- Firebase Core 1.6.0 or higher
+- Firebase Cloud Firestore 3.1.7 or higher
+
 For help getting started with Flutter development, view the
 [online documentation](https://docs.flutter.dev/), which offers tutorials,
 samples, guidance on mobile development, and a full API reference.
